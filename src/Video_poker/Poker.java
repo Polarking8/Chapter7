@@ -1,6 +1,7 @@
 package Video_poker;
 
 public class Poker {
+    //create 1-52? or 1.4, 1.3, 1.2, 1.1. probably 1-52
 }
 //In this assignment, you will implement a simulation of a popular casino game usually called video poker.
 // The card deck contains 52 cards, 13 of each suit. At the beginning of the game, the deck is shuffled.
