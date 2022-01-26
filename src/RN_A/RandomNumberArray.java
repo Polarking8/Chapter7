@@ -1,7 +1,29 @@
 package RN_A;
-
+import java.util.Arrays;
+import java.util.Random;
 public class RandomNumberArray {
+    public static int[] addNum(int n, int arr[], int x){
+        int i;
+        int newarray[] = new int[n + 1];
+        for (i = 0; i < n; i++)
+            newarray[i] = arr[i];
+        newarray[n] = x;
+        return newarray;
+    }
+    public int[] unsortedSequence(int seed){
+        int i = 0;
+        Random random = new Random();
+        random.setSeed(seed);
+        int [] numbers = new int[20];
+        while(i<20){
+            numbers = addNum(i,numbers,random.nextInt(0,99));
+            i++;
+        }
+        return (numbers);
+    }
+    public String sortedSequence(int seed){
+        int[] sortedNumbers = unsortedSequence(seed);
+        Arrays.sort(sortedNumbers);
+        return Arrays.toString(sortedNumbers);
+    }
 }
-//Write a program that generates a sequence of 20 random values between 0 and 99 in an array,
-// prints the sequence, sorts it, and prints the sorted sequence. Use the sort method from the standard Java library.
-//Use a separate business logic and tester class.
