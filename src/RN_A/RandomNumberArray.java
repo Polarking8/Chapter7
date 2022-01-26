@@ -2,13 +2,13 @@ package RN_A;
 import java.util.Arrays;
 import java.util.Random;
 public class RandomNumberArray {
-    public static int[] addNum(int n, int arr[], int x){
+    public static int[] addNum(int n, int[] arr, int x){
         int i;
-        int newarray[] = new int[n + 1];
+        int[] newArray = new int[n + 1];
         for (i = 0; i < n; i++)
-            newarray[i] = arr[i];
-        newarray[n] = x;
-        return newarray;
+            newArray[i] = arr[i];
+        newArray[n] = x;
+        return newArray;
     }
     public int[] unsortedSequence(int seed){
         int i = 0;
