@@ -1,6 +1,11 @@
 package Fibonacci;
 
 public class Fib_loop {
+    public int findNthFibNumber(int n){
+        int nth = 0;
+
+        return nth;
+    }
 }
 //The Fibonacci numbers are defined by the sequence
 //f1 = 1
