@@ -1,9 +1,41 @@
 package Video_poker;
 
+import java.util.Random;
+
 public class Poker {
-    //create 1-52? or 1.4, 1.3, 1.2, 1.1. probably 1-52
+    private int [] deck = {
+      0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,
+      27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51
+    };
+    private int [] hand = {4};
+    private int playerTokens = 1;
+    public void shuffleCards(int card[], int n) {
+        Random random = new Random();
+        for (int i = 0; i < n; i++) {
+            int r = i + random.nextInt(52 - i);
+            int tempCard = card[r];
+            card[r] = card[i];
+            card[i] = tempCard;
+        }
+    } // to shuffle cards go shuffleCards(array, 52)
+    public void dealCards(){
+        for(int i = 0;i < 4; i++){
+            hand [i] = deck[i];
+            System.out.println(hand.toString());
+        }
+    }
+    public void rejectCards(){
+
+    }
+    public void scoreHand(){
+
+    }
+    public void playGame(){
+
+    }
 }
-//In this assignment, you will implement a simulation of a popular casino game usually called video poker.
+// order validated: Royal Flush, Straight Flush, Four of a Kind, Full House,
+// Flush, Straight, Three of a Kind, Two Pair, and Jacks or Better.
 // The card deck contains 52 cards, 13 of each suit. At the beginning of the game, the deck is shuffled.
 // You need to devise a fair method for shuffling. (It does not have to be efficient.)
 // The player pays a token for each game.

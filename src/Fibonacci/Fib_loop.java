@@ -15,4 +15,3 @@ public class Fib_loop {
         return nth;
     }
 }
-//Create a UML diagram
