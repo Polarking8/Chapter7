@@ -6,7 +6,6 @@ public class TicTacTester {
     public static void main(String[] args) {
         TicTacToe game = new TicTacToe();
         Scanner in = new Scanner(System.in);
-        //System.out.println(game.printBoard());
         do {
             System.out.println("Enter the row where you want to place your mark: (1,2 or 3): ");
             int markRow = in.nextInt()-1;

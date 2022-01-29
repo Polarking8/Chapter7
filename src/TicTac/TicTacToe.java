@@ -44,16 +44,6 @@ public class TicTacToe {
         }
         return won;
     }
-//    public String printBoard(){
-//        StringBuilder boardBuild = new StringBuilder();
-//        for(int i = 0; i< board.length; i++){
-//            for(int j = 0; j< board[0].length; j++){
-//                boardBuild.append(String.format("|%1d|",board[i][j]));
-//            }
-//            boardBuild.append(String.format("\n"));
-//        }
-//        return boardBuild.toString();
-//    }
     public void translateBoard(){
         for(int i = 0; i <board.length; i++){
             for(int j = 0; j<board[0].length; j++){
@@ -92,4 +82,3 @@ public class TicTacToe {
         }
     }
 }
-//Include a junit test, UML and a flow chart.
